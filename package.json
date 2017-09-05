@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "standard | snazzy && mocha --recursive ./test"
+    "test": "mocha --recursive ./test && standard | snazzy"
   },
   "standard": {
     "globals": [
