@@ -18,8 +18,6 @@ function add () {
   let a = 21
   let b = '21'
 
-  // TODO: Write your code here.
-
   return a + b
 }
 
@@ -33,7 +31,9 @@ function concat () {
   let time = 9
   let weeks = 'weeks.'
 
-  // TODO: Write your code here.
+
+ 
+  return  message + ' ' + time +  ' ' + weeks  
 }
 
 /**
@@ -45,7 +45,7 @@ function round () {
   let firstNumber = 12.24
   let secondNumber = 29.27
 
-  // TODO: Write your code here.
+  return Math.round (firstNumber + secondNumber)
 }
 
 /**
@@ -55,7 +55,14 @@ function round () {
  * @returns {string} A string with comma separated odd values.
  */
 function getOddNumbers (max) {
-  // TODO: Write your code here.
+  let odd = ''
+  for (let i = 1; i <= max; i += 2) {
+    odd += i
+    if (i !== max) {
+      odd += ', '
+    }
+  }
+return odd
 }
 
 /**
@@ -71,7 +78,17 @@ function getOddNumbers (max) {
 function greetings () {
   let hour = new Date().getHours()
 
-  // TODO: Write your code here.
+  console.log (hour)
+  if (hour > 8 && hour < 12 ){
+    return 'Good morning!'
+  } else if (hour > 12 && hour <18 ){
+    return 'Good afternoon!'
+  } else if (hour > 18 && hour < 24){
+    return 'Good evening!'
+  }
+  else {
+    return 'Good night!'
+  }
 }
 
 /**
@@ -82,6 +99,7 @@ function greetings () {
  */
 function replaceHyphensFor (str) {
   // TODO: Write your code here.
+
 }
 
 /**
